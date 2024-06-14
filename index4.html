@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>Documento sin tÃ­tulo</title>
+
+<script type="text/javascript">
+
+  var men1 = "Hola";
+  var men2 = " Mundo";
+
+  mensaje = men1+men2;
+  document.write(mensaje+"</br>");
+
+  /*Otra forma aplicando la funciÃ³n concat*/
+  mensaje1 = men1.concat(men2);
+  document.write(mensaje1+"</br>");
+
+  /*Transforma a Mayusculas*/
+  mensaje2 = men1.toUpperCase()
+  document.write(mensaje2+"</br>");
+
+  /*El tamaÃ±o de la Lonmgitud de la Cadena*/
+  mensaje3 = men2.length;
+  document.write(mensaje3+"</br>");
+
+  /*Obtiene el Caracter en la posicion indicada*/
+  mensaje4 = men2.charAt(4);
+  document.write(mensaje4+"</br>");
+
+  /*Busca la primera posicion en la que se encuentra un caracter, sino  la encuentra enviua "-1"*/
+  /*lastIndexOf() calcula la ultima posicion*/
+  mensaje5 = men2.indexOf('u');
+  document.write(mensaje5+"</br>");
+  
+  /*substring(inicio,final) Extrae una porcion de una cadena de texto, el segundo parametro es opcional*/  
+  
+  var men = "Hola Mundo";
+  var porc1 = men.substring(3)
+  document.write(porc1+"</br>");
+
+  var porc2 = men.substring(3,7)
+  document.write(porc2+"</br>");
+  
+  /*split convierte una cadena en una array de cadenas, es un separador */  
+  /*join() funcion contraria a split, une todos los elementos de un array*/
+  /*pop() elimina el ultimo elemento del array, el array se modifica y su longitud disminuye en uno*/
+  /*push() aÃ±ade un elemento al final del array, y la longitud aumenta en uno*/
+  /*shift() aÃ±ade un elemento al principio del array, la longitud aumenta en uno*/    
+  /*reverse() modifica un array, colocando sus elementos en orden inverso*/      
+  
+  var men1 = "Hola Mundo cruel";
+  var sep = men1.split(" ")
+  document.write(sep+"</br>");
+
+</script>
+</head>
+<body>
+</body>
+</html>
